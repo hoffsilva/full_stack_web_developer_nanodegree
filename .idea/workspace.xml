@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="286fc062-4dbf-4626-80b4-3ff6135884cb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Lesson6/send_text.py" afterPath="$PROJECT_DIR$/Lesson6/send_text.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="send_text.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lesson6/send_text.py">
+      <file leaf-file-name="check_profanity.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lesson7/check_profanity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="255">
+              <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="movie_quotes.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lesson7/movie_quotes.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -40,6 +50,8 @@
       <list>
         <option value="$PROJECT_DIR$/Lesson5/mindstorms.py" />
         <option value="$PROJECT_DIR$/Lesson6/send_text.py" />
+        <option value="$PROJECT_DIR$/Lesson7/check_profanity.py" />
+        <option value="$PROJECT_DIR$/Lesson7/movie_quotes.txt" />
       </list>
     </option>
   </component>
@@ -79,6 +91,11 @@
             <path>
               <item name="full_stack_web_developer_nanodegree" type="b2602c69:ProjectViewProjectNode" />
               <item name="full_stack_web_developer_nanodegree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="full_stack_web_developer_nanodegree" type="b2602c69:ProjectViewProjectNode" />
+              <item name="full_stack_web_developer_nanodegree" type="462c0819:PsiDirectoryNode" />
+              <item name="Lesson7" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -166,7 +183,23 @@
     <entry file="file://$PROJECT_DIR$/Lesson6/send_text.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson7/check_profanity.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lesson7/movie_quotes.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
           <folding />
         </state>
       </provider>
