@@ -1,0 +1,119 @@
+
+<head>
+    <meta charset="utf-8">
+    <title>Fresh Tomatoes!</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+        }
+        #trailer .modal-dialog {
+            margin-top: 200px;
+            width: 640px;
+            height: 480px;
+        }
+        .hanging-close {
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            z-index: 9001;
+        }
+        #trailer-video {
+            width: 100%;
+            height: 100%;
+        }
+        .movie-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .movie-tile:hover {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+        .scale-media {
+            padding-bottom: 56.25%;
+            position: relative;
+        }
+        .scale-media iframe {
+            border: none;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            background-color: white;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <!-- Trailer Video Modal -->
+    <div class="modal" id="trailer">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
+            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
+          </a>
+          <div class="scale-media" id="trailer-video-container">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="4KPTXpQehio" data-toggle="modal" data-target="#trailer">
+    <img src="https://images-na.ssl-images-amazon.com/images/M/MV5BMDU2ZWJlMjktMTRhMy00ZTA5LWEzNDgtYmNmZTEwZTViZWJkXkEyXkFqcGdeQXVyNDQ2OTk4MzI@._V1_UX182_CR0,0,182,268_AL_.jpg" width="220" height="342">
+    <h2>Toy Story</h2>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="2MIvbG5u1l0" data-toggle="modal" data-target="#trailer">
+    <img src="data:image/jpeg;base64,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" width="220" height="342">
+    <h2>Avatar</h2>
+</div>
+
+    </div>
+  </body>
+</html>
