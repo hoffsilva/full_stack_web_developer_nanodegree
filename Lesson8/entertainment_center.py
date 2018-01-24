@@ -17,4 +17,5 @@ avatar = media.Movie("Avatar",
 
 movies = [toy_story, avatar]
 
-fresh_tomatoes.open_movies_page(movies)
+#fresh_tomatoes.open_movies_page(movies)
+print(media.Movie.VALID_RATINGS)
